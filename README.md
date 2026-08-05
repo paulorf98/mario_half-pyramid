@@ -1,20 +1,45 @@
-```markdown
-# Mario (Less Comfortable) — CS50
+# Mario — CS50
 
-A C program that generates a right-aligned half-pyramid of blocks (`#`),
-replicating the pyramid from Nintendo's Super Mario Bros.
+Solutions for the **Mario** problem set from Harvard's CS50.
+
+This repository contains both versions of the exercise:
+
+- **Mario (Less Comfortable)** — Prints a right-aligned half-pyramid.
+- **Mario (More Comfortable)** — Prints two mirrored half-pyramids separated by a gap.
+
+## Project Structure
+
+```text
+.
+├── README.md
+├── .gitignore
+├── mario_less/
+│   ├── bin/
+│   └── mario.c
+└── mario_more/
+    ├── bin/
+    └── mario.c
+```
 
 ## Concepts Practiced
 
-- User input validation (do...while)
-- Custom functions & prototypes
-- Nested loops (for)
-- Command-line input handling
-```
+- User input validation (`do...while`)
+- Function declarations and definitions
+- Nested `for` loops
+- Console input and output
+- Algorithmic thinking through pattern generation
 
-## Example
+---
+
+## Mario (Less Comfortable)
+
+Prints a right-aligned half-pyramid.
+
+### Example
+
 ```text
-Size: 5
+Height: 5
+
     #
    ##
   ###
@@ -22,18 +47,46 @@ Size: 5
 #####
 ```
 
-## How to Run
-
-Compile the code using `gcc` or `clang`:
+### Compile
 
 ```bash
-make mario
-# or
-gcc -o mario mario.c
+cd mario_less
+gcc mario.c -o bin/mario
 ```
 
-Run the executable:
+### Run
 
 ```bash
-./mario
+./bin/mario
+```
+
+---
+
+## Mario (More Comfortable)
+
+Prints two mirrored half-pyramids separated by two spaces.
+
+### Example
+
+```text
+Height: 5
+
+    #  #
+   ##  ##
+  ###  ###
+ ####  ####
+#####  #####
+```
+
+### Compile
+
+```bash
+cd mario_more
+gcc mario.c -o bin/mario
+```
+
+### Run
+
+```bash
+./bin/mario
 ```
